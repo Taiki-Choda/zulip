@@ -251,7 +251,7 @@ export function initialize() {
     });
 
     delegate("body", {
-        target: ".narrow_to_compose_recipients",
+        target: [".narrow_to_compose_recipients"],
         appendTo: () => document.body,
         content() {
             const narrow_filter = narrow_state.filter();
